@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>T-T</title>
+		<style>
+			#body
+			{
+				background-color: black;
+				font-family: Trebuchet MS;
+				background: url("https://images.unsplash.com/photo-1597809259188-0e5ffcbb0ba9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") no-repeat center center fixed;
+				background-size: cover;
+				height: 100%;
+				overflow: hidden;
+			}
+			#h1
+			{
+				color: White;
+				font-size: xx-large;
+				font-variant: small-cap;
+				text-align: Center;
+				box-shadow:
+				 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+				 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+				 0 12.5px 10px rgba(0, 0, 0, 0.06),
+				 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+				 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+				 0 100px 80px rgba(0, 0, 0, 0.12);
+  				background-color: black;
+  				margin: auto;
+  				width: 100%;
+  				padding: 5px;
+  				font-variant: small-caps;
+			}
+			#div1
+			{
+				background-color: rgba(0,0,0,0.7);
+				box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+				width: 70%;
+				text-align: center;
+				margin: auto;
+				padding: 10px;
+				color: white;
+				border-radius: 20%;
+				font-variant: small-caps;
+
+			}
+			.formels
+			{
+				background-color: DimGrey;
+				color: white;
+				box-shadow: inset 0 0 3px #000000;
+				padding: 4px 5px;
+				font-family: Trebuchet MS;
+			}
+			#forms
+			{
+				font-size: large;
+				text-align: left;
+				margin: auto;
+				width: 30%;
+			}
+			#heading2
+			{
+				color: white;
+				margin: auto;
+				width: 80%;
+				text-align: center;
+
+			}
+			#png
+			{
+				height: 100%;
+				width: 100%;
+			}
+			#story
+			{
+				text-align: left;
+			}
+			#submit
+			{
+				 border: none;
+				 color: white;
+				 padding: 15px 32px;
+   				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+			}
+			#para
+			{
+				text-align: center;
+				color: white;
+				font-weight: bold;
+				font-size: large;
+				font-variant: small-caps;
+			}
+		</style>
+	</head>
+	<body id="body">
+		<div id="png">
+		<h1 id="h1">Moba's Feedback Form T-T</h1><br><br>
+		<p id="para">SUP! just write a funny story. Something that happened to you or someone you know. Thnx! :)</p><br>
+		<div id="div1">
+			<h2 id="heading2">FILL THE FORM</h2><br><br>
+			<form id="forms" action="https://c14d3766-2df7-4cc6-8499-de9fcf1abc28-ide.cs50.xyz:8080/feedback.html">
+				<label for="fname">First Name: </label>
+				<input type="text" name="fname" id="first-name" class="formels" value="First Name" ><br><br>
+				<label for="lname">Last Name: </label>
+				<input type="text" name="lname" id="last_name" class="formels" value="Last Name" ><br><br>
+				<label for="email">Email: </label>
+				<input type="text" name="email" id="email" class="formels" value="Email" ><br><br>
+				<label >Relationship with MOBA: </label><br>
+				<input type="radio" id="friends" name="friends" value="Friend">
+				<label for="friends">Friend.</label><br>
+				<input type="radio" id="relative" name="relative" value="relative">
+				<label for="relative">Relative.</label><br>
+				<input type="radio" id="family" name="family" value="family">
+				<label for="family">Family.</label><br>
+				<input type="radio" id="other" name="other" value="other">
+				<lable for="other">Other.</lable><br><br>
+				<lable for="story" >Tell your Story: </lable><br>
+				<textarea name="story" id="story" class="formels" rows="10" cols="30" value="Start Here" >
+				</textarea><br><br>
+				<input type="submit" value="Submit" class="formels" id="submit">
+			</form>
+
+		</div>
+		</div>
+	</body>
