@@ -1,0 +1,221 @@
+#body
+{
+	font-family: Trebuchet MS, sans-serif;
+	background-image: url(assignment_back13.jpg);
+	background-color: Black;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	text-align: center;
+	align-items: center;
+	margin: 0;
+}
+
+.navBar
+{
+	font-family: Lucida Console, sans-serif;
+	font-variant: small-caps;
+	font-size: x-large;
+	margin: 0 auto;
+	width: 80%;
+	animation: slide 5s ease-in;
+}
+
+.logo
+{
+	width: 200px;
+	height: 130px;
+	float: left;
+	padding: 10px 0;
+}
+
+@keyframes slide {
+    25% { top: 0px; }
+}
+header
+{
+	border-width: 20px;
+	border-color: white;
+	position: relative;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav{
+	float: right;
+	border-bottom-color: White;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav li{
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 60px;
+
+	position: relative;
+}
+
+nav a::before{
+	content: "";
+	display: block;
+	height: 4px;
+	width: 0%;
+	background-color: White;
+	position: absolute;
+	top: 136px;
+	transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+	width: 100%;
+}
+.imageAndName
+{
+	position: relative;
+	font-size: 60px;
+	top: 280px;
+	text-align: center;
+	color: white;
+	margin: auto;
+	display: block;
+	overflow: visible;
+	align-items: center;
+}
+#name
+{
+	color: white;
+	text-align: center;
+
+}
+
+.imageAndName
+{
+	position: relative;
+	font-size: 60px;
+	top: -250px;
+	text-align: left;
+	color: white;
+	margin: auto;
+	display: block;
+	overflow: visible;
+	align-items: left;
+
+}
+#name
+{
+	color: white;
+	text-align: left;
+	padding-left: 200px;
+	padding-top: 20%;
+	background-image: url(back.png);
+	padding-bottom: 50%;
+	z-index: 0;
+	position:relative;
+
+}
+
+a.buttons:link{
+	color: White;
+	text-decoration: none;
+}
+
+a.buttons:hover{
+	color: DarkGrey;
+	text-decoration: none;
+}
+
+a:active
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.moba{
+	display: inline-block;
+}
+.moba::before
+{
+	content: "";
+	display: block;
+	height: 4px;
+	width: 0%;
+	background-color: White;
+	position: absolute;
+	top: 70px;
+	transition: all ease-in-out 250ms;
+}
+
+.moba:hover .fullnameyo{
+	display: block;
+}
+.moba:hover::before {
+	width: 153px;
+}
+.moba:active{
+	font-size: 60px;
+}
+.fullnameyo 
+{
+	display: none;
+	position: absolute;
+	width: 400px;
+	height: 260px;
+	top: 160%;
+	background-color: #12232b;
+	padding: 20px;
+	border-radius: 15px;
+	z-index: -1;
+	box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.fullnameyo 
+{
+	display: none;
+	position: absolute;
+	width: 400px;
+	height: 260px;
+	top: 100px;
+	left: 1000px;
+	background-color: #2D2828;
+	padding: 20px;
+	border-radius: 15px;
+	z-index: 4;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	
+}
+span{
+	opacity: 0;
+	transition: all 0.4s ease;
+	transform: translateY(50px);
+}
+
+span.fade
+{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+/** Large Devices Only **/
+@media(min-width: 1200px)
+	#body{
+
+	}
